@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: rgb(121, 82, 82);
+    font-weight: 300;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#ee9ca7, #ffdde1);
+    
+}
+
+.box{
+    border: 2px;
+    border-radius: 5px;
+    padding: 25px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.527);
+    box-shadow: 0px 0px 10px rgba(172, 129, 129, 0.137);
+}
+
+.box .title {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .input{
+    margin-bottom: 10px;
+}
+
+.box .input_grp{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box .input label{
+    display: block;
+    margin-bottom:  5px;
+}
+
+.box .input_grp input[type="text"]{
+    width: 165px;
+    box-shadow: 0px 0px 7px rgba(172, 129, 129, 0.274);
+}
+
+.box input[type="text"],input[type="email"],input[type="password"]{
+    width: 100%;
+    border: 1px;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(172, 129, 129, 0.274);
+}
+
+.box .input .radio{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.box .input .button{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box .input input[type="submit"],input[type="reset"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px ;
+    background-color: rgba(255, 255, 255, 0.336);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    box-shadow: 0px 0px 7px rgba(172, 129, 129, 0.274);
+}
+
+.box .input .radio input[type="radio"]{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.box .input .radio label{
+    display: table-cell;
+    border: 1px;
+    padding: 5px;
+    width: 100%; 
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(172, 129, 129, 0.274);
+
+}
+
+
+input[type="radio"]:checked + label{
+    background-color: rgb(236, 113, 113);
+    color: white;
+}
+
+.box .input .radio label:hover{
+    background-color: rgb(247, 176, 176);
+    color: white;
+}
+
+
+input[type="date"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px ;
+    color: rgba(0, 0, 0, 0.274);
+    box-shadow: 0px 0px 7px rgba(172, 129, 129, 0.274);
+    background-color: rgba(255, 255, 255, 0.336);
+}
+.input .button .submit:hover{
+    background-color: rgb(81, 250, 137);
+    color: honeydew;
+}
+
+.input .button .cancel:hover{
+    background-color: rgb(250, 81, 81);
+    color: honeydew;
+}
+
+input[type="text"]:hover , input[type="email"]:hover , input[type="password"]:hover , input[type="date"]:hover {
+    background-color:  rgba(255, 255, 255, 0.726);
+}

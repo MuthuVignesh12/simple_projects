@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <div class="box">
+          <div class="title">
+            <h1 class="head">Sign Up</h1>
+          </div>
+          <div class="input_grp">
+            <div class="input">
+              <label for="fname">First Name</label>
+              <input class="fname" id="fname" name="fnmae" type="text" />
+            </div>
+            <div class="input">
+              <label for="sname">Second Name</label>
+              <input class="sname" id="sname" name="sname" type="text" />
+            </div>
+          </div>
+          <div class="input">
+            <label for="date">D.O.B</label>
+            <input id="date" type="date" />
+          </div>
+          <div class="input">
+            <label for="gender">Gender</label>
+            <div class="radio">
+              <input id="male" name="radio" type="radio" />
+              <label for="male">Male</label>
+              <input id="female" name="radio" type="radio" />
+              <label for="female">Female</label>
+              <input id="other" name="radio" type="radio" />
+              <label for="other">Other</label>
+            </div>
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="input">
+            <label for="passwd">Password</label>
+            <input type="password" id="passwd" required />
+          </div>
+          <div class="input">
+            <label for="repasswd">Re-Enter Password</label>
+            <input type="password" id="repasswd" required />
+          </div>
+          <div class="input">
+            <div class="button">
+              <input type="reset" value="cancel" class="cancel" />
+              <input type="submit" value="submit" class="submit" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
